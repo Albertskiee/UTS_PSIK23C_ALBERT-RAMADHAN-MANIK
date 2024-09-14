@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #5A639C;
+    color: white;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styling */
+section {
+    padding: 50px 50px;
+    min-height: 100vh;
+    background-color:#9B86BD ;
+}
+
+.home {
+    background-image: url(background.jpg);
+    text-align: center;
+    padding: 120px 20px;
+    text-align:center;
+    position:static;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.content.reverse {
+    flex-direction: row-reverse;
+}
+
+.text {
+    flex: 1;
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 36px;
+}
+
+b{
+    font-size: 50px;
+}
+a{
+    font-size: 50px;
+}
+
+li{
+    font-size: 36px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content.reverse {
+        flex-direction: column;
+    }
+}
